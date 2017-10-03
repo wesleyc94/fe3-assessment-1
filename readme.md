@@ -20,4 +20,4 @@ GPL-3.0 © Mike Bostock
 
 [cover]: preview.png
 
-[url]: https://github.com/wesleyc94/course-17-18/tree/debug/site/class-2-debug/wesleyc94
+[url]: https://github.com/wesleyc94/fe3-assessment-1
