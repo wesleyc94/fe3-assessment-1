@@ -9,7 +9,7 @@ var svg = d3.select("svg"),
 
 var format = d3.format(",d");
 
-// Met deze scale ontstaat er een nieuwe scale met een range
+// Met deze scale ontstaat er een nieuwe scale met een range om de kleur te bepalen.
 var color = d3.scaleOrdinal(d3.schemeCategory20c);
 // Met d3pack wordt er een nieuwe layout gemaakt.
 var pack = d3.pack()
@@ -23,7 +23,7 @@ d3.csv("index.csv", function(d) {
     },
     function(error, classes) {
         if (error) throw error;
-
+        // Met deze code ontstaat er een hiërarchie met cirkels
         var root = d3.hierarchy({ children: classes })
             .sum(function(d) { return d.speakers; })
             .each(function(d) {
